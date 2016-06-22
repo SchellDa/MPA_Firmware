@@ -1,0 +1,835 @@
+Release 14.7 par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+ikhepw10::  Wed Jun 22 15:46:44 2016
+
+par -w -intstyle ise -ol high -xe n -mt 4 glib_top_map.ncd glib_top.ncd
+glib_top.pcf 
+
+
+Constraints file: glib_top.pcf.
+Loading device for application Rf_Device from file '6vlx130t.nph' in environment /home/readout/Xilinx/14.7/ISE_DS/ISE/.
+   "glib_top" is an NCD, version 3.2, device xc6vlx130t, package ff1156, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.17 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                12,340 out of 160,000    7%
+    Number used as Flip Flops:              12,331
+    Number used as Latches:                      9
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                     10,587 out of  80,000   13%
+    Number used as logic:                   10,150 out of  80,000   12%
+      Number using O6 output only:           6,652
+      Number using O5 output only:             358
+      Number using O5 and O6:                3,140
+      Number used as ROM:                        0
+    Number used as Memory:                     115 out of  27,840    1%
+      Number used as Dual Port RAM:             56
+        Number using O6 output only:             0
+        Number using O5 output only:             2
+        Number using O5 and O6:                 54
+      Number used as Single Port RAM:           48
+        Number using O6 output only:             0
+        Number using O5 output only:             2
+        Number using O5 and O6:                 46
+      Number used as Shift Register:            11
+        Number using O6 output only:            11
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:    322
+      Number with same-slice register load:    298
+      Number with same-slice carry load:        24
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 4,657 out of  20,000   23%
+  Number of LUT Flip Flop pairs used:       13,953
+    Number with an unused Flip Flop:         3,576 out of  13,953   25%
+    Number with an unused LUT:               3,366 out of  13,953   24%
+    Number of fully used LUT-FF pairs:       7,011 out of  13,953   50%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 160,000    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       549 out of     600   91%
+    Number of LOCed IOBs:                      527 out of     549   95%
+    IOB Flip Flops:                             47
+    IOB Master Pads:                            44
+    IOB Slave Pads:                             44
+    Number of bonded IPADs:                      6
+      Number of LOCed IPADs:                     6 out of       6  100%
+    Number of bonded OPADs:                      4
+      Number of LOCed OPADs:                     4 out of       4  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 59 out of     264   22%
+    Number using RAMB36E1 only:                 59
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  6 out of     528    1%
+    Number using RAMB18E1 only:                  6
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                     19 out of      32   59%
+    Number used as BUFGs:                       16
+    Number used as BUFGCTRLs:                    3
+  Number of ILOGICE1/ISERDESE1s:                37 out of     600    6%
+    Number used as ILOGICE1s:                   37
+    Number used as ISERDESE1s:                   0
+  Number of OLOGICE1/OSERDESE1s:                12 out of     600    2%
+    Number used as OLOGICE1s:                   12
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             2 out of     120    1%
+    Number of LOCed BUFHCEs:                     2 out of       2  100%
+  Number of BUFIODQSs:                           0 out of      60    0%
+  Number of BUFRs:                               4 out of      30   13%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     480    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              2 out of      20   10%
+  Number of IBUFDS_GTXE1s:                       1 out of      10   10%
+  Number of ICAPs:                               1 out of       2   50%
+  Number of IDELAYCTRLs:                         0 out of      15    0%
+  Number of IODELAYE1s:                          0 out of     600    0%
+  Number of MMCM_ADVs:                           5 out of      10   50%
+    Number of LOCed MMCM_ADVs:                   1 out of       5   20%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       2 out of       4   50%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+PAR will use up to 4 processors
+WARNING:Timing:3223 - Timing constraint PATH "TS_clk160from1252ipb_clk_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_clk3202sysclk_path" TIG; ignored during timing analysis.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+WARNING:Par:289 - The signal amc_port_tx_out<20>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_tx_out<17>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_tx_out<18>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_tx_out<19>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal fpga_clkout_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram1_bwa_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram1_bwb_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram1_bwc_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram1_bwd_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram2_bwa_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram2_bwb_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram2_bwc_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal sram2_bwd_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<10>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<11>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<21>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<22>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<23>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<16>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<10>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<11>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<21>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<22>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<23>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<16>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<10>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<11>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<21>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<30>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<22>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<31>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<23>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<32>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<33>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<25>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<26>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<27>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<10>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<11>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<21>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<22>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<31>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<23>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<32>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<24>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<33>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<25>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<26>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<27>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<8>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_n<9>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<8>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_ha_p<9>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<8>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_n<9>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<8>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fmc2_la_p<9>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_de<20>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_de<17>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_de<18>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_de<19>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_tx_de<20>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_tx_de<17>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_tx_de<18>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_tx_de<19>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_out<20>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_out<17>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_out<18>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal amc_port_rx_out<19>_OBUF has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/i_trig_countA_l/RAM32M_inst_RAMD_D1_O has no load.  PAR will not attempt to route
+   this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/i_trig_countA_h/RAM32M_inst_RAMD_D1_O has no load.  PAR will not attempt to route
+   this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/g_trig_countA[0].i_trig_countA/RAM32M_inst_RAMD_D1_O has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/g_trig_countA[1].i_trig_countA/RAM32M_inst_RAMD_D1_O has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/g_trig_countA[2].i_trig_countA/RAM32M_inst_RAMD_D1_O has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/g_trig_countA[3].i_trig_countA/RAM32M_inst_RAMB_D1_DPO has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/g_trig_countA[3].i_trig_countA/RAM32M_inst_RAMC_D1_DPO has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal usr/i_MPA_wrapper/i_MPA_top/g_trig_countA[3].i_trig_countA/RAM32M_inst_RAMD_D1_O has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+Starting Multi-threaded Router
+
+INFO:Route:501 - One or more directed routing (DIRT) constraints generated for a specific device have been found. Note that DIRT strings are
+   guaranteed to work only on the same device they were created for. If the DIRT constraints fail, verify that the same connectivity is
+   available in the target device for this implementation. 
+
+Phase  1  : 78515 unrouted;      REAL time: 30 secs 
+
+Phase  2  : 64984 unrouted;      REAL time: 34 secs 
+
+Phase  3  : 23554 unrouted;      REAL time: 59 secs 
+
+Phase  4  : 23558 unrouted; (Setup:103, Hold:9350, Component Switching Limit:0)     REAL time: 1 mins 5 secs 
+
+Updating file: glib_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:103, Hold:9171, Component Switching Limit:0)     REAL time: 1 mins 20 secs 
+
+Phase  6  : 0 unrouted; (Setup:103, Hold:9171, Component Switching Limit:0)     REAL time: 1 mins 23 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:9171, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:9171, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 56 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 1 secs 
+Total REAL time to Router completion: 2 mins 1 secs 
+Total CPU time to Router completion (all processors): 2 mins 44 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|   system/mac_clk<0> |  Regional Clk| No   | 1058 |  0.499     |  1.345      |
++---------------------+--------------+------+------+------------+-------------+
+|        user_ipb_clk | BUFGCTRL_X0Y6| No   | 1030 |  0.338     |  1.834      |
++---------------------+--------------+------+------+------------+-------------+
+|   system/mac_clk<2> |  Regional Clk| No   | 1054 |  0.506     |  1.344      |
++---------------------+--------------+------+------+------------+-------------+
+|system/sram_w[2]_clk |              |      |      |            |             |
+|                     | BUFGCTRL_X0Y3| No   |  119 |  0.164     |  1.664      |
++---------------------+--------------+------+------+------------+-------------+
+|system/sram_w[1]_clk |              |      |      |            |             |
+|                     | BUFGCTRL_X0Y4| No   |  121 |  0.303     |  1.859      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|      MPA_top/clk400 |BUFGCTRL_X0Y12| No   |  137 |  0.315     |  1.844      |
++---------------------+--------------+------+------+------------+-------------+
+|system/user_clk125_2 |              |      |      |            |             |
+|             _bufg_o |BUFGCTRL_X0Y31| No   |   27 |  0.302     |  1.822      |
++---------------------+--------------+------+------+------------+-------------+
+|system/cdce_synch/cl |              |      |      |            |             |
+|     k_from_bufg_mux | BUFGCTRL_X0Y2| No   |    9 |  0.109     |  1.781      |
++---------------------+--------------+------+------+------------+-------------+
+|system/phy_en.phy_et |              |      |      |            |             |
+|h/sgmii/v6_gtxwizard |              |      |      |            |             |
+|  _top_inst/clk_ds_i |  Regional Clk| No   |    7 |  0.002     |  1.021      |
++---------------------+--------------+------+------+------------+-------------+
+|system/amc_p0_en.amc |              |      |      |            |             |
+|_p0_eth/basex/v6_gtx |              |      |      |            |             |
+|wizard_top_inst/clk_ |              |      |      |            |             |
+|                ds_i |  Regional Clk| No   |    7 |  0.006     |  1.020      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|   MPA_top/clk160_PS |BUFGCTRL_X0Y10| No   |   21 |  0.019     |  1.548      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|      MPA_top/clk320 | BUFGCTRL_X0Y9| No   |   49 |  0.123     |  1.658      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/clk160from12 |              |      |      |            |             |
+|                   5 |BUFGCTRL_X0Y27| No   |   30 |  0.129     |  1.803      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|      MPA_top/sysclk | BUFGCTRL_X0Y5| No   |   67 |  0.295     |  1.824      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/sfp_ttclk_x6 |              |      |      |            |             |
+|               _cdce | BUFGCTRL_X0Y0|Yes   |    1 |  0.000     |  1.574      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/fmc1_ttclk_x |              |      |      |            |             |
+|              6_cdce |BUFGCTRL_X0Y23|Yes   |    1 |  0.000     |  1.575      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_clocks/clk |              |      |      |            |             |
+|                 160 |BUFGCTRL_X0Y11| No   |    1 |  0.000     |  1.603      |
++---------------------+--------------+------+------+------------+-------------+
+|  system/ipb_inv_clk | BUFGCTRL_X0Y7| No   |    1 |  0.000     |  1.586      |
++---------------------+--------------+------+------+------------+-------------+
+|system/glib_pll_clko |              |      |      |            |             |
+|          ut_31_25_c |         Local|      |    3 |  0.000     |  1.672      |
++---------------------+--------------+------+------+------------+-------------+
+|system/glib_pll_clko |              |      |      |            |             |
+|          ut_31_25_b |         Local|      |    3 |  0.000     |  1.710      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/set_read_clk |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.000     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|        usr/beam_clk |         Local|      |   57 |  2.669     |  3.310      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_acquisitio |              |      |      |            |             |
+|            n/done_i |         Local|      |    4 |  0.000     |  1.218      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_clocks/i_M |              |      |      |            |             |
+|MCM_clk160p_ML_NEW_I |              |      |      |            |             |
+|                   1 |         Local|      |    3 |  0.000     |  0.953      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_clocks/i_M |              |      |      |            |             |
+|MCM_clk160_ML_NEW_I1 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.000     |  1.756      |
++---------------------+--------------+------+------+------------+-------------+
+|system/pll/mmcm_adv_ |              |      |      |            |             |
+|      inst_ML_NEW_I1 |         Local|      |    3 |  0.000     |  1.503      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_5_ML_NEW_ |              |      |      |            |             |
+|                 CLK |         Local|      |    3 |  0.118     |  0.349      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_clocks/i_M |              |      |      |            |             |
+|MCM_beam_clk160_ML_N |              |      |      |            |             |
+|               EW_I1 |         Local|      |    3 |  0.000     |  1.702      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_clocks/i_M |              |      |      |            |             |
+|MCM_beam_clk160_ML_N |              |      |      |            |             |
+|              EW_OUT |         Local|      |    2 |  0.000     |  0.497      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_strip_out/ |              |      |      |            |             |
+|          start_send |         Local|      |    4 |  0.000     |  0.647      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|    itoring/ttclk_x6 |         Local|      |   40 |  0.052     |  0.971      |
++---------------------+--------------+------+------+------------+-------------+
+|system/spi/reset_i_c |              |      |      |            |             |
+|     pol_i_AND_908_o |         Local|      |    2 |  0.000     |  0.478      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/mm |              |      |      |            |             |
+|cm_adv_inst_ML_NEW_I |              |      |      |            |             |
+|                   1 |         Local|      |    3 |  0.000     |  0.910      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_13_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    1 |  0.000     |  0.221      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/mm |              |      |      |            |             |
+|cm_adv_inst_ML_NEW_O |              |      |      |            |             |
+|                  UT |         Local|      |    2 |  0.000     |  0.359      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_21_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    3 |  0.249     |  0.598      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_37_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    3 |  0.000     |  0.483      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_29_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    3 |  0.386     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_clocks/i_M |              |      |      |            |             |
+|MCM_clk160p_ML_NEW_O |              |      |      |            |             |
+|                  UT |         Local|      |    2 |  0.000     |  0.496      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_MPA_wrapper/i_ |              |      |      |            |             |
+|MPA_top/i_clocks/i_M |              |      |      |            |             |
+|MCM_clk160_ML_NEW_OU |              |      |      |            |             |
+|                   T |         Local|      |    2 |  0.000     |  0.355      |
++---------------------+--------------+------+------+------------+-------------+
+|system/pll/mmcm_adv_ |              |      |      |            |             |
+|     inst_ML_NEW_OUT |         Local|      |    2 |  0.000     |  0.236      |
++---------------------+--------------+------+------+------------+-------------+
+| system/clk125_2_mgt |         Local|      |    7 |  0.000     |  2.131      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/cl |              |      |      |            |             |
+|              kfbout |         Local|      |    1 |  0.000     |  0.574      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/cl |              |      |      |            |             |
+|               kout0 |         Local|      |    1 |  0.000     |  0.574      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+WARNING:Timing:3223 - Timing constraint PATH "TS_clk160from1252ipb_clk_path" 
+   TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_clk3202sysclk_path" TIG; 
+   ignored during timing analysis.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+Number of Timing Constraints that were not applied: 15
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | SETUP       |     0.007ns|     2.493ns|       0|           0
+  lk400_dcm_0 = PERIOD TIMEGRP         "usr | HOLD        |     0.023ns|            |       0|           0
+  _i_MPA_wrapper_i_MPA_top_i_clocks_clk400_ |             |            |            |        |            
+  dcm_0"         TS_usr_i_MPA_wrapper_i_MPA |             |            |            |        |            
+  _top_i_clocks_clk160p_dcm_0 / 2.5 HIGH 50 |             |            |            |        |            
+  %                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_user_clk125_2_0 = PERIOD TIMEGRP "user | SETUP       |     0.137ns|     7.863ns|       0|           0
+  _clk125_2_0" TS_clk125_2_n HIGH 50%       | HOLD        |     0.015ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | MINPERIOD   |     0.278ns|     2.222ns|       0|           0
+  lk400_dcm = PERIOD TIMEGRP         "usr_i |             |            |            |        |            
+  _MPA_wrapper_i_MPA_top_i_clocks_clk400_dc |             |            |            |        |            
+  m"         TS_usr_i_MPA_wrapper_i_MPA_top |             |            |            |        |            
+  _i_clocks_clk160p_dcm / 2.5 HIGH 50%      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | SETUP       |     0.278ns|     2.847ns|       0|           0
+  lk320_dcm_0 = PERIOD TIMEGRP         "usr | HOLD        |     0.091ns|            |       0|           0
+  _i_MPA_wrapper_i_MPA_top_i_clocks_clk320_ |             |            |            |        |            
+  dcm_0"         TS_usr_i_MPA_wrapper_i_MPA |             |            |            |        |            
+  _top_i_clocks_clk160p_dcm_0 / 2 HIGH 50%  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | MINHIGHPULSE|     0.724ns|     2.400ns|       0|           0
+  lk320_dcm = PERIOD TIMEGRP         "usr_i |             |            |            |        |            
+  _MPA_wrapper_i_MPA_top_i_clocks_clk320_dc |             |            |            |        |            
+  m"         TS_usr_i_MPA_wrapper_i_MPA_top |             |            |            |        |            
+  _i_clocks_clk160p_dcm / 2 HIGH 50%        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_phy_en_phy_eth_clk125_out = PER | SETUP       |     0.833ns|     7.167ns|       0|           0
+  IOD TIMEGRP         "system/phy_en.phy_et | HOLD        |     0.023ns|            |       0|           0
+  h/clk125_out" 8 ns HIGH 50%               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_gbt_phase_monitoring_ttclk_pll_ | SETUP       |     0.936ns|     3.230ns|       0|           0
+  clkout0_0 = PERIOD TIMEGRP         "syste | HOLD        |     0.146ns|            |       0|           0
+  m_gbt_phase_monitoring_ttclk_pll_clkout0_ |             |            |            |        |            
+  0" TS_xpoint1_clk1_n /         6 PHASE 2. |             |            |            |        |            
+  08333333 ns HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_amc_p0_en_amc_p0_eth_clk125_out | SETUP       |     1.046ns|     6.954ns|       0|           0
+   = PERIOD TIMEGRP         "system/amc_p0_ | HOLD        |     0.036ns|            |       0|           0
+  en.amc_p0_eth/clk125_out" 8 ns HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | SETUP       |     2.882ns|     3.368ns|       0|           0
+  lk160p_dcm_0 = PERIOD TIMEGRP         "us | HOLD        |     0.020ns|            |       0|           0
+  r_i_MPA_wrapper_i_MPA_top_i_clocks_clk160 |             |            |            |        |            
+  p_dcm_0"         TS_user_clk125_2_0 / 1.2 |             |            |            |        |            
+  8 HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | MINLOWPULSE |     3.250ns|     3.000ns|       0|           0
+  lk160p_dcm = PERIOD TIMEGRP         "usr_ |             |            |            |        |            
+  i_MPA_wrapper_i_MPA_top_i_clocks_clk160p_ |             |            |            |        |            
+  dcm" TS_user_clk125_2 /         1.28 HIGH |             |            |            |        |            
+   50%                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sysBRAM2ipb_clk = MAXDELAY FROM TIMEGR | SETUP       |     1.368ns|    14.632ns|       0|           0
+  P "TNM_sysBRAMs" TO TIMEGRP         "TNM_ | HOLD        |     1.062ns|            |       0|           0
+  ipb_clk" 16 ns                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_gbt_phase_monitoring_ttclk_pll_ | MINLOWPULSE |     2.166ns|     2.000ns|       0|           0
+  clkout0 = PERIOD TIMEGRP         "system_ |             |            |            |        |            
+  gbt_phase_monitoring_ttclk_pll_clkout0" T |             |            |            |        |            
+  S_xpoint1_clk1_p / 6         PHASE 2.0833 |             |            |            |        |            
+  3333 ns HIGH 50%                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_xpoint1_clk1_p = PERIOD TIMEGRP "xpoin | MINLOWPULSE |    15.000ns|    10.000ns|       0|           0
+  t1_clk1_p" 25 ns HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_xpoint1_clk1_n = PERIOD TIMEGRP "xpoin | SETUP       |    21.755ns|     3.245ns|       0|           0
+  t1_clk1_n" TS_xpoint1_clk1_p PHASE        | HOLD        |     0.109ns|            |       0|           0
+    12.5 ns HIGH 50%                        | MINLOWPULSE |    15.000ns|    10.000ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_ipb_clk2sysBRAM = MAXDELAY FROM TIMEGR | SETUP       |     3.409ns|    12.591ns|       0|           0
+  P "TNM_ipb_clk" TO TIMEGRP         "TNM_s | HOLD        |     0.042ns|            |       0|           0
+  ysBRAMs" 16 ns                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk125_2_n = PERIOD TIMEGRP "clk125_2_ | SETUP       |     3.793ns|     4.207ns|       0|           0
+  n" TS_clk125_2_p PHASE 4 ns HIGH 50%      | HOLD        |     0.093ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | SETUP       |     3.860ns|     2.390ns|       0|           0
+  lk160_PS_dcm_0 = PERIOD TIMEGRP         " | HOLD        |     0.091ns|            |       0|           0
+  usr_i_MPA_wrapper_i_MPA_top_i_clocks_clk1 |             |            |            |        |            
+  60_PS_dcm_0"         TS_usr_i_MPA_wrapper |             |            |            |        |            
+  _i_MPA_top_i_clocks_clk160p_dcm_0 HIGH 50 |             |            |            |        |            
+  %                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_user_clk125_2 = PERIOD TIMEGRP "user_c | MINLOWPULSE |     4.000ns|     4.000ns|       0|           0
+  lk125_2" TS_clk125_2_p HIGH 50%           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk125_2_p = PERIOD TIMEGRP "clk125_2_ | MINLOWPULSE |     4.000ns|     4.000ns|       0|           0
+  p" 8 ns HIGH 50%                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | MINPERIOD   |     4.821ns|     1.429ns|       0|           0
+  lk160_dcm_0 = PERIOD TIMEGRP         "usr |             |            |            |        |            
+  _i_MPA_wrapper_i_MPA_top_i_clocks_clk160_ |             |            |            |        |            
+  dcm_0"         TS_usr_i_MPA_wrapper_i_MPA |             |            |            |        |            
+  _top_i_clocks_clk160p_dcm_0 HIGH 50%      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | MINPERIOD   |     4.821ns|     1.429ns|       0|           0
+  lk160_dcm = PERIOD TIMEGRP         "usr_i |             |            |            |        |            
+  _MPA_wrapper_i_MPA_top_i_clocks_clk160_dc |             |            |            |        |            
+  m"         TS_usr_i_MPA_wrapper_i_MPA_top |             |            |            |        |            
+  _i_clocks_clk160p_dcm HIGH 50%            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_MPA_wrapper_i_MPA_top_i_clocks_c | MINPERIOD   |     4.821ns|     1.429ns|       0|           0
+  lk160_PS_dcm = PERIOD TIMEGRP         "us |             |            |            |        |            
+  r_i_MPA_wrapper_i_MPA_top_i_clocks_clk160 |             |            |            |        |            
+  _PS_dcm"         TS_usr_i_MPA_wrapper_i_M |             |            |            |        |            
+  PA_top_i_clocks_clk160p_dcm HIGH 50%      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_a_0 = PER | SETUP       |     7.009ns|    24.991ns|       0|           0
+  IOD TIMEGRP         "system_glib_pll_clko | HOLD        |     0.018ns|            |       0|           0
+  ut_31_25_a_0" TS_clk125_2_n / 0.25 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_beam_clk = PERIOD TIMEGRP "TNM_beam_cl | SETUP       |    14.464ns|     8.808ns|       0|           0
+  k" 37.736 ns HIGH 50%                     | HOLD        |     0.065ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_b_0 = PER | SETUP       |    15.489ns|    16.511ns|       0|           0
+  IOD TIMEGRP         "system_glib_pll_clko | HOLD        |     0.074ns|            |       0|           0
+  ut_31_25_b_0" TS_clk125_2_n / 0.25 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_c_0 = PER | SETUP       |    18.419ns|    13.581ns|       0|           0
+  IOD TIMEGRP         "system_glib_pll_clko | HOLD        |     0.057ns|            |       0|           0
+  ut_31_25_c_0" TS_clk125_2_n / 0.25 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_a = PERIO | MINHIGHPULSE|    29.600ns|     2.400ns|       0|           0
+  D TIMEGRP         "system_glib_pll_clkout |             |            |            |        |            
+  _31_25_a" TS_clk125_2_p / 0.25 HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_c = PERIO | MINPERIOD   |    30.571ns|     1.429ns|       0|           0
+  D TIMEGRP         "system_glib_pll_clkout |             |            |            |        |            
+  _31_25_c" TS_clk125_2_p / 0.25 HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_b = PERIO | MINPERIOD   |    30.571ns|     1.429ns|       0|           0
+  D TIMEGRP         "system_glib_pll_clkout |             |            |            |        |            
+  _31_25_b" TS_clk125_2_p / 0.25 HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_beam_clk2clk320_path" TIG        | SETUP       |         N/A|     4.810ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_beam_clk2ipb_clk_path" TIG       | SETUP       |         N/A|     5.322ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk160from1252ipb_clk_path" TIG  | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk4002ipb_clk_path" TIG         | SETUP       |         N/A|    12.158ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk3202ipb_clk_path" TIG         | SETUP       |         N/A|     2.843ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_ipb_clk2clk160from125_path" TIG  | SETUP       |         N/A|     8.534ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_ipb_clk2clk160_path" TIG         | SETUP       |         N/A|     2.726ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_ipb_clk2clk160_PS_path" TIG      | SETUP       |         N/A|     3.059ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_ipb_clk2clk320_path" TIG         | SETUP       |         N/A|     6.331ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_ipb_clk2clk400_path" TIG         | SETUP       |         N/A|     5.898ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk3202sysclk_path" TIG          | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk3202clk400_path" TIG          | SETUP       |         N/A|     3.786ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk3202clk160_PS_path" TIG       | SETUP       |         N/A|     2.426ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clk125_2_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk125_2_p                  |      8.000ns|      4.000ns|      7.978ns|            0|            0|            0|      1084196|
+| TS_clk125_2_n                 |      8.000ns|      4.207ns|      7.978ns|            0|            0|         2456|      1081740|
+|  TS_system_glib_pll_clkout_31_|     32.000ns|     13.581ns|          N/A|            0|            0|       140533|            0|
+|  25_c_0                       |             |             |             |             |             |             |             |
+|  TS_system_glib_pll_clkout_31_|     32.000ns|     24.991ns|          N/A|            0|            0|       834791|            0|
+|  25_a_0                       |             |             |             |             |             |             |             |
+|  TS_user_clk125_2_0           |      8.000ns|      7.863ns|      7.978ns|            0|            0|         1744|         4604|
+|   TS_usr_i_MPA_wrapper_i_MPA_t|      6.250ns|      3.368ns|      6.232ns|            0|            0|          834|         3770|
+|   op_i_clocks_clk160p_dcm_0   |             |             |             |             |             |             |             |
+|    TS_usr_i_MPA_wrapper_i_MPA_|      2.500ns|      2.493ns|          N/A|            0|            0|         1148|            0|
+|    top_i_clocks_clk400_dcm_0  |             |             |             |             |             |             |             |
+|    TS_usr_i_MPA_wrapper_i_MPA_|      6.250ns|      2.390ns|          N/A|            0|            0|          136|            0|
+|    top_i_clocks_clk160_PS_dcm_|             |             |             |             |             |             |             |
+|    0                          |             |             |             |             |             |             |             |
+|    TS_usr_i_MPA_wrapper_i_MPA_|      3.125ns|      2.847ns|          N/A|            0|            0|         2486|            0|
+|    top_i_clocks_clk320_dcm_0  |             |             |             |             |             |             |             |
+|    TS_usr_i_MPA_wrapper_i_MPA_|      6.250ns|      1.429ns|          N/A|            0|            0|            0|            0|
+|    top_i_clocks_clk160_dcm_0  |             |             |             |             |             |             |             |
+|  TS_system_glib_pll_clkout_31_|     32.000ns|     16.511ns|          N/A|            0|            0|       100068|            0|
+|  25_b_0                       |             |             |             |             |             |             |             |
+| TS_system_glib_pll_clkout_31_2|     32.000ns|      1.429ns|          N/A|            0|            0|            0|            0|
+| 5_c                           |             |             |             |             |             |             |             |
+| TS_system_glib_pll_clkout_31_2|     32.000ns|      2.400ns|          N/A|            0|            0|            0|            0|
+| 5_a                           |             |             |             |             |             |             |             |
+| TS_user_clk125_2              |      8.000ns|      4.000ns|      7.110ns|            0|            0|            0|            0|
+|  TS_usr_i_MPA_wrapper_i_MPA_to|      6.250ns|      3.000ns|      5.555ns|            0|            0|            0|            0|
+|  p_i_clocks_clk160p_dcm       |             |             |             |             |             |             |             |
+|   TS_usr_i_MPA_wrapper_i_MPA_t|      2.500ns|      2.222ns|          N/A|            0|            0|            0|            0|
+|   op_i_clocks_clk400_dcm      |             |             |             |             |             |             |             |
+|   TS_usr_i_MPA_wrapper_i_MPA_t|      6.250ns|      1.429ns|          N/A|            0|            0|            0|            0|
+|   op_i_clocks_clk160_PS_dcm   |             |             |             |             |             |             |             |
+|   TS_usr_i_MPA_wrapper_i_MPA_t|      3.125ns|      2.400ns|          N/A|            0|            0|            0|            0|
+|   op_i_clocks_clk320_dcm      |             |             |             |             |             |             |             |
+|   TS_usr_i_MPA_wrapper_i_MPA_t|      6.250ns|      1.429ns|          N/A|            0|            0|            0|            0|
+|   op_i_clocks_clk160_dcm      |             |             |             |             |             |             |             |
+| TS_system_glib_pll_clkout_31_2|     32.000ns|      1.429ns|          N/A|            0|            0|            0|            0|
+| 5_b                           |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_xpoint1_clk1_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_xpoint1_clk1_p              |     25.000ns|     10.000ns|     19.380ns|            0|            0|            0|         2643|
+| TS_xpoint1_clk1_n             |     25.000ns|     10.000ns|     19.380ns|            0|            0|          721|         1922|
+|  TS_system_gbt_phase_monitorin|      4.167ns|      3.230ns|          N/A|            0|            0|         1922|            0|
+|  g_ttclk_pll_clkout0_0        |             |             |             |             |             |             |             |
+| TS_system_gbt_phase_monitoring|      4.167ns|      2.000ns|          N/A|            0|            0|            0|            0|
+| _ttclk_pll_clkout0            |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 155 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+WARNING:Par:284 - There are 25 sourceless signals in this design. This design will not pass the DRC check run by Bitgen.
+
+INFO:ParHelpers:197 - Number of "Exact" mode Directed Routing Constraints: 1
+INFO:ParHelpers:199 - All "EXACT" mode Directed Routing constrained nets successfully routed. The number of constraints
+   found: 1, number successful: 1
+Total REAL time to PAR completion: 2 mins 11 secs 
+Total CPU time to PAR completion (all processors): 2 mins 53 secs 
+
+Peak Memory Usage:  1746 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 186
+Number of info messages: 4
+
+Writing design to file glib_top.ncd
+
+
+
+PAR done!
